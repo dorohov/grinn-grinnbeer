@@ -1,0 +1,42 @@
+.kontakty-panel__{
+	&block{	
+		position: relative;
+	}
+	&panel{
+		padding: 30px 15px;
+		background-color: @b-body-bg;
+		@media @media-point-screen-lg {
+			position: absolute;
+			z-index: 2;
+			top: 15%;
+			left: 10%;
+			max-width: 600px;
+			padding: 6.8vw 4.6vw;	
+			box-shadow: 8px 8px 19px fadeout(@black, 80%);		
+		}
+		@media @media-point-xxl {
+			left: 11%;
+		}
+	}
+	&map{
+		width: 100%;
+		height: 300px;
+		@media @media-point-xs {
+			height: 250px;
+		}
+		@media @media-point-tablet {
+			height: 500px;
+		}
+		@media @media-point-screen {
+			max-height: 730px;
+			min-width: 500px;
+			height: 100vh;
+		}
+	}
+	&heading{
+		margin-bottom: 30px;
+		@media @media-point-screen {
+			margin-bottom: 2.8vw;
+		}
+	}
+}
